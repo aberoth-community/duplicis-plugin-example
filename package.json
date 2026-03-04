@@ -14,8 +14,7 @@
   "license": "MIT",
   "homepage": "https://duplicis.app",
   "dependencies": {
-    "preact": "^10.28.3",
-    "svelte": "^5.51.2"
+    "preact": "^10.28.4"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.3"

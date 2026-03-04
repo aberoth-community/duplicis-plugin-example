@@ -1,0 +1,8 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src/index.tsx"],
+  "name": "@duplicis/plugin-example",
+  "includeVersion": true,
+  "readme": "./README.md",
+  "intentionallyNotExported": ["__class"]
+}

@@ -1,0 +1,29 @@
+{
+  "extends": "@duplicis/config/tsconfig.app.json",
+  "compilerOptions": {
+    /* project */
+    "incremental": true,
+    "composite": true,
+    "tsBuildInfoFile": "node_modules/.cache/tsconfig.tsbuildinfo",
+
+    /* modules */
+    "paths": {
+      "react": ["./node_modules/preact/compat/"],
+      "react/jsx-runtime": ["./node_modules/preact/jsx-runtime"],
+      "react-dom": ["./node_modules/preact/compat/"],
+      "react-dom/*": ["./node_modules/preact/compat/*"]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+
+    /* paths */
+    "rootDir": "./",
+    "baseUrl": "./",
+    "noEmit": true,
+
+    /* typechecking */
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*", "./vite.config.ts"]
+}

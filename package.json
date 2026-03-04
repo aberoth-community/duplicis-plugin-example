@@ -1,0 +1,28 @@
+{
+  "name": "@duplicis/plugin-example",
+  "description": "Duplicis example plugin",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "vite build",
+    "format": "pnpm --workspace-root run format",
+    "lint": "pnpm --workspace-root run lint",
+    "lint:tsc": "tsc"
+  },
+  "author": "ashnel3",
+  "license": "MIT",
+  "homepage": "https://duplicis.app",
+  "dependencies": {
+    "preact": "^10.28.3",
+    "svelte": "^5.51.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.3"
+  },
+  "peerDependencies": {
+    "@duplicis/config": "workspace:*",
+    "@duplicis/plugin-preact": "workspace:*",
+    "@duplicis/types": "workspace:*"
+  }
+}
